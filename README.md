@@ -36,9 +36,9 @@ To identify, analyse and disseminate innovative solutions to be used for relevan
   <li> datos_campo (id, timestamp,topic,data) where you store the raw data coming from the probes </li>
   <li> sensor (id, name) where you store the descriptions for every sensor that each probe sent, ir, 0001, Water level, 0002, Temperature, and so on.</li>
   <li> sites (id, name, utmX, utmY,code ...) this is an optional table to show information about the sites.
-  The nodered script will store data here for every sensor mqtt message received.
+  The node-red script will store data here for every sensor mqtt message received.
  
- <h4> 4- NodeRed </h4>
+ <h4> 4- Node-Red </h4>
  You need to havr a Node-Red server installed to deploy the script (json based, import) that resides in the nodered folder.
  This script gets the raw data from the mqtt message and builds an INSERT query to execute it in the DB server. It also has debug output and optional formatting for dashboard visualization.
  <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/9d2b1eca88820da170d62e30e1c4c699b8dee29d/images/NodeRED_flow.png">
