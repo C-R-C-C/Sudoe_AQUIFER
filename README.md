@@ -29,7 +29,15 @@ To identify, analyse and disseminate innovative solutions to be used for relevan
  
  <h4> 2- Setup Python script </h4>
  This python script receives the call from the ecoLog,  searches for  raw data and publish it to a Mqtt broker. The script could be changed to store  data directly to the database thus not requiring the Mqtt and Nodered part, but because this network it is been setup for many different kind of probes and other IoT devices, the MQTT route has been selected.
- There are many guides on Internet on how to setup a Linux+Apache or Linux+Nginx to execute python scripts. Once you have tested the setup, you can install the logger.cgi script and wait for the ecoLog to send data, with a basic mqtt monitor command (mosquitto_sub, for example, you could see raw sensor data coming from the probes).
+ There are many guides on Internet on how to setup a <i>Linux+Apache+Mosquitto Broker</i> or <i>Linux+Nginx+Mosquitto Broker</i> to execute python scripts. Once you have tested the setup, you can install the logger.cgi script and wait for the ecoLog to send data, with a basic mqtt monitor command (mosquitto_sub, for example, you could see raw sensor data coming from the probes).
+ 
+ <h4> 3- Mysql </h4>
+ 
+ 
+ <h4> 4- NodeRed </h4>
+ 
+ 
+ <h4> 5- Grafana </h4>
  
  
  
