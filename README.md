@@ -44,8 +44,17 @@ To identify, analyse and disseminate innovative solutions to be used for relevan
  <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/9d2b1eca88820da170d62e30e1c4c699b8dee29d/images/NodeRED_flow.png">
  
  <h4> 5- Grafana </h4>
- There are many guides on Internet as well to install a Grafana server. Once you have it installed, you can import the dashboard from the grafana folder of the repository. There has to be a datasource with the name <i>"IoT_piezos"</i> pointing at your Mysql database where the tables and data from the previous points is. 
+ There are many guides on Internet as well to install a Grafana server. Once you have it installed, you can import the dashboard from the grafana folder of the repository. There has to be a datasource with the name <i>"IoT_piezos"</i> pointing at your Mysql database where the tables and data from the previous points is. In order for the panels to show the correct information you should have put the correct "zb", "pi" and "z" info of each installation site. For a reference look a the installation pic:
+ <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/33336a49239fdab39c36a1c6ae8b99ef71f4a73e/images/Aquifer%20CRCC%20-%20Grafana%203.png">
  
+ If everything went well you should be able to see a dashboard like this:
+ 
+ <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/33336a49239fdab39c36a1c6ae8b99ef71f4a73e/images/Aquifer%20CRCC%20-%20Grafana.png">
+ <p> and </p>
+ <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/33336a49239fdab39c36a1c6ae8b99ef71f4a73e/images/Aquifer%20CRCC%20-%20Grafana%202.png">
+ 
+ 
+ <b>@ Comunidad de Regantes del Campo de Cartagena </b>
  
  
  
