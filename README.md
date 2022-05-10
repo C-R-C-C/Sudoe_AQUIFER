@@ -12,7 +12,7 @@ To establish relationships among groundwater resources, surficial waters and / o
 To test and develop innovative solutions for groundwater management, to face the risks related to the water cycle sustainability.
 To identify, analyse and disseminate innovative solutions to be used for relevant stakeholders in the decision-making processes.
  
- <h2>Realtime Groundwater monitoring system</h2>
+ <h2>Realtime Groundwater Monitoring System</h2>
  
  In this repository you have access to configuration files and a small setup guide to recreate a system that receives data from OTT ecoLog probes family, store it in a MySQL database and visualize it with Grafana. All different open source software. The configuration showed is just one way
  of doing it, as with many software and hardware projects there are many ways. The method used here works perfectly as of May of 2022.
