@@ -14,9 +14,8 @@ To identify, analyse and disseminate innovative solutions to be used for relevan
  
  <h2></h2>
  
- In this repository you have access to configuration files and explained setup to recreate a system that receives data from OTT ecoLog probes family,
- store it in a MySQL database and visualize it with Grafana. All different open source software. The configuration showed is just one way
- of achiving it, as with many software and hardware projects there are many ways. The method used here works perfectly as of May of 2022.
+ In this repository you have access to configuration files and a small setup guide to recreate a system that receives data from OTT ecoLog probes family, store it in a MySQL database and visualize it with Grafana. All different open source software. The configuration showed is just one way
+ of doing it, as with many software and hardware projects there are many ways. The method used here works perfectly as of May of 2022.
  
  <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/c07b741be2d2685c0466f9e38c8451c479a72d8e/Esquema.png">
  
