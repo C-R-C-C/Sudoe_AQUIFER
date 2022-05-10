@@ -19,6 +19,17 @@ To identify, analyse and disseminate innovative solutions to be used for relevan
  
  <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/c07b741be2d2685c0466f9e38c8451c479a72d8e/Esquema.png">
  
+ <h3>Steps:</h3>
+ 
+ <h4> 1- Setup OTT ecoLogs </h4>
+ It is required to select the "OTT MIS" data format and "HTTP POST" Protocol type, as part of the "Setting Modem" configuration.
+ <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/e89bc1921ed5e133799dc9058e8e250d74ff626b/images/OTT_CONFIG_CRCC2.png">
+ Them, you have to congig the URL where your python server script is going to be, ir, http://mydomain/cgi-bin/logger.cgi
+ <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/e89bc1921ed5e133799dc9058e8e250d74ff626b/images/OTT_CONFIG_CRCC.png">
+ 
+ 
+ 
+ 
  
  
  
