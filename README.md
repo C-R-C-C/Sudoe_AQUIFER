@@ -32,7 +32,7 @@ To identify, analyse and disseminate innovative solutions to be used for relevan
  There are many guides on Internet on how to setup a <i>Linux+Apache+Mosquitto Broker</i> or <i>Linux+Nginx+Mosquitto Broker</i> to execute python scripts. Once you have tested the setup, you can install the logger.cgi script and wait for the ecoLog to send data, with a basic mqtt monitor command (mosquitto_sub, for example, you could see raw sensor data coming from the probes).
  
  <h4> 3- Mysql </h4>
-  You need a Mysql Server installed, in the Mysql folder you have a script to create the tables needed for this setup. Basicly there are three tables:
+  You need a Mysql Server installed, in the Mysql folder you have a script to create the tables needed for this setup. There are three tables:
   <li> datos_campo (id, timestamp,topic,data) where you store the raw data coming from the probes </li>
   <li> sensor (id, name) where you store the descriptions for every sensor that each probe sent, ir, 0001, Water level, 0002, Temperature, and so on.</li>
   <li> sites (id, name, utmX, utmY,code ...) this is an optional table to show information about the sites.
