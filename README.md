@@ -22,13 +22,13 @@ To identify, analyse and disseminate innovative solutions to be used for relevan
  <h3>Steps:</h3>
  
  <h4> 1- Setup OTT ecoLogs </h4>
- It is required to select the "OTT MIS" data format and "HTTP POST" Protocol type, as part of the "Setting Modem" configuration.
+ It is required to select the "OTT MIS" data format and "HTTP POST" Protocol type, as part of the "Settings Modem" configuration.
  <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/e89bc1921ed5e133799dc9058e8e250d74ff626b/images/OTT_CONFIG_CRCC2.png">
- <p>Then, you have to config the URL where your python server script is going to be, ie, http://mydomain/cgi-bin/logger.cgi</p>
+ <p>Then, you have to config the URL and port where your python server script is going to be, ie, http://mydomain/cgi-bin/logger.cgi</p>
  <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/e89bc1921ed5e133799dc9058e8e250d74ff626b/images/OTT_CONFIG_CRCC.png">
  
  <h4> 2- Setup Python script </h4>
- This python script receives the call from the ecoLog probe,  searches for  raw data and publish it to a Mqtt broker. The script could be changed to store  data directly to the database thus not requiring the Mqtt and Nodered part, but because this network it is been setup for many different kind of probes and other IoT devices, the MQTT route has been selected.
+ This python script receives the call from the ecoLog probe, searches for raw data and publish it to a Mqtt broker. The script could be changed to store data directly to the database thus not requiring the Mqtt and Node-red part, but because this network it is been setup for many different kind of probes and other IoT devices, the ubiquitous MQTT route has been selected.
  There are many guides on Internet on how to setup a <i>Linux+Apache+Mosquitto Broker</i> or <i>Linux+Nginx+Mosquitto Broker</i> to execute python scripts. Once you have tested the setup, you can install the logger.cgi script and wait for the ecoLog to send data, with a basic mqtt monitor command (mosquitto_sub, for example, you could see raw sensor data coming from the probes).
  
  <h4> 3- Mysql </h4>
