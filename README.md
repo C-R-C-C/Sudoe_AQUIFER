@@ -28,14 +28,20 @@ To identify, analyse and disseminate innovative solutions to be used for relevan
  <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/e89bc1921ed5e133799dc9058e8e250d74ff626b/images/OTT_CONFIG_CRCC.png">
  
  <h4> 2- Setup Python script </h4>
- This python script receives the call from the ecoLog,  searches for  raw data and publish it to a Mqtt broker. The script could be changed to store  data directly to the database thus not requiring the Mqtt and Nodered part, but because this network it is been setup for many different kind of probes and other IoT devices, the MQTT route has been selected.
+ This python script receives the call from the ecoLog probe,  searches for  raw data and publish it to a Mqtt broker. The script could be changed to store  data directly to the database thus not requiring the Mqtt and Nodered part, but because this network it is been setup for many different kind of probes and other IoT devices, the MQTT route has been selected.
  There are many guides on Internet on how to setup a <i>Linux+Apache+Mosquitto Broker</i> or <i>Linux+Nginx+Mosquitto Broker</i> to execute python scripts. Once you have tested the setup, you can install the logger.cgi script and wait for the ecoLog to send data, with a basic mqtt monitor command (mosquitto_sub, for example, you could see raw sensor data coming from the probes).
  
  <h4> 3- Mysql </h4>
- 
+  You need a Mysql Server installed, in the Mysql folder you have a script to create the tables needed for this setup. Basicly there are three tables:
+  <li> datos_campo (id, timestamp,topic,data) where you store the raw data coming from the probes </li>
+  <li> sensor (id, name) where you store the descriptions for every sensor that each probe sent, ir, 0001, Water level, 0002, Temperature, and so on.</li>
+  <li> sites (id, name, utmX, utmY,code ...) this is an optional table to show information about the sites.
+  The nodered script will store data here for every sensor mqtt message received.
  
  <h4> 4- NodeRed </h4>
- 
+ You need to a NodeRed server installed to deploy de script (json based, import) that resides in the nodered folder.
+ This script gets the raw data from the mqtt message and builds an INSERT query to execute it in the DB server. It also has debug output and optional formatting for dashboard creation.
+ <img src="https://github.com/C-R-C-C/Sudoe_AQUIFER/blob/9d2b1eca88820da170d62e30e1c4c699b8dee29d/images/NodeRED_flow.png">
  
  <h4> 5- Grafana </h4>
  
