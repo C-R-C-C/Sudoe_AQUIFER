@@ -24,7 +24,7 @@ MQTT_password = "XXXXXXXXXX"
 #DB Settings
 DB_host="localhost"
 DB_user="root"
-DB_password="Io20xjh12"
+DB_password="XXXXXXX"
 
 print ("Content-Type: text/plain\r\n")
 
